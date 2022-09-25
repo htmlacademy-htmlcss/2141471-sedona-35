@@ -19,14 +19,14 @@
         <ul class="user-navigation">
           <li class="user-item-navigation">
             <a class="link-navigation" href="#">
-              <span class="visually-hiden">
+              <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
           <li class="user-item-navigation">
             <a class="link-navigation" href="#">
-              <span class="visually-hiden">
+              <span class="visually-hidden">
                 Избранное
               </span>
             </a>
@@ -39,7 +39,7 @@
     </header>
 
     <main class="main-index">
-      <h1 class="visually-hiden">Седона</h1>
+      <h1 class="visually-hidden">Седона</h1>
       <section class="welcome">
         <img class="welcome-background" src="" alt="Добро пожаловать">
         <img class="welcome-background-decoration" src="" alt="">
@@ -51,7 +51,7 @@
         </p>
       </section>
       <section class="advantages">
-        <h2 class="visually-hiden">Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-title">Настоящий городок</h3>
@@ -60,7 +60,7 @@
             </p>
           </li>
           <li class="advantages-item">
-            <h3 class="visually-hiden">Фото городка</h3>
+            <h3 class="visually-hidden">Фото городка</h3>
             <img class="foto-city" src="" alt="Фото городка">
           </li>
           <li class="advantages-item">
@@ -82,7 +82,7 @@
             </p>
           </li>
           <li class="advantages-item">
-            <h3 class="visually-hiden">Фото каньона</h3>
+            <h3 class="visually-hidden">Фото каньона</h3>
             <img class="foto-canyon" src="" alt="Фото каньона">
           </li>
           <li class="advantages-item">
@@ -94,21 +94,21 @@
         </ul>
       </section>
       <section class="service">
-        <h2 class="visually-hiden">Сервисы</h2>
+        <h2 class="visually-hidden">Сервисы</h2>
         <ul class="service-list">
-          <li class="srvice-item">
+          <li class="service-item">
             <h3 class="service-title">Жильё</h3>
             <p class="service-description">
               Рекомендуем пожить<br>в настоящем мотеле, всё как в кино!
             </p>
           </li>
-          <li class="srvice-item">
+          <li class="service-item">
             <h3 class="service-title">Еда</h3>
             <p class="service-description">
               Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
-          <li class="srvice-item">
+          <li class="service-item">
             <h3 class="service-title">Сувениры</h3>
             <p class="service-description">
               Не только китайского, но и настоящего местного производства!
@@ -128,12 +128,43 @@
         <p class="subscription-text">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <form class="subscription-form" method="post">
-          <input class="subscription-field" type="email" placeholder="Ваш e-mail">
-          <button class="button-subscription" type="button">Подписаться</button>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="subscription-field" type="email" name="email" placeholder="Ваш e-mail">
+          <button class="button-subscription" type="submit">Подписаться</button>
         </form>
       </article>
     </main>
+
+    <footer class="page-footer">
+      <section class="footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">В контакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютюб</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <a class="contacts-link" href="tel:88128121212">+7 (812) 812-12-12</a>
+      </section>
+      <section class="logo-academy">
+        <h2 class="visually-hidden">Логотип академии</h2>
+        <img class="academy-logo" src="" alt="Логотип академии">
+      </section>
+    </footer>
 
   </body>
 </html>

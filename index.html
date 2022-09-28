@@ -8,12 +8,12 @@
 
     <header class="page-header">
       <nav class="navigation">
-        <a class="logo" href="index.html">
+        <a class="logo">
           <img class="page-header-logo" src="" alt="Логотип сайта Седона">
         </a>
         <ul class="page-navigation">
           <li class="page-item-navigation">
-            <a class="page-link activ" href="index.html">Главная</a>
+            <a class="page-link page-active" href="#">Главная</a>
           </li>
           <li class="page-item-navigation">
             <a class="page-link" href="#">О седоне</a>
@@ -45,8 +45,6 @@
       <h1 class="visually-hidden">Небольшой городок Седона</h1>
 
       <section class="welcome">
-        <img class="welcome-background" src="" alt="Добро пожаловать">
-        <img class="background-decoration" src="" alt="">
         <h2 class="welcome-subtitle">
           Седона — небольшой городок в Аризоне,заслуживающий большего!
         </h2>
@@ -64,9 +62,9 @@
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-image-item">
             <h3 class="visually-hidden">Фото городка</h3>
-            <img class="foto-city" src="" alt="Фото городка Седона">
+            <img class="advantages-image" src="" alt="Фото городка Седона">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-subtitle">Небольшая площадь</h3>
@@ -86,9 +84,9 @@
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-image-item">
             <h3 class="visually-hidden">Фото каньона</h3>
-            <img class="foto-valley" src="" alt="Фото долины">
+            <img class="advantages-image" src="" alt="Фото долины">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-subtitle">Там есть мост дьявола</h3>
@@ -100,13 +98,13 @@
       </section>
 
       <section class="service">
-        <h2 class="visually-hidden">Сервисы</h2>
+        <h2 class="visually-hidden">Сервис</h2>
         <ul class="service-list">
           <li class="service-item">
             <img class="service-icon" src="" alt="Дом">
             <h3 class="service-subtitle">Жильё</h3>
             <p class="service-description">
-              Рекомендуем пожить<br>в настоящем мотеле, всё как в кино!
+              Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </li>
           <li class="service-item">
@@ -124,18 +122,18 @@
             </p>
           </li>
         </ul>
-
       </section>
 
       <section class="hotel-search">
-        <h2 class="hotel-search-title">Заинтересовались?</h2>
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <p class="hotel-search-interested">Заинтересовались?</p>
         <p class="hotel-search-discription">
-          Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a class="link-search-hotel" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+        <a class="link-search-hotel" href="#">Поиск гостиницы в Седоне</a>
       </section>
 
-      <article class="subscription">
+      <section class="subscription">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-text">
           Только полезная информация и никакого спама, честное бойскаутское!
@@ -144,44 +142,36 @@
           <label class="visually-hidden" for="email">Ваша почта</label>
           <input class="subscription-field" type="email" id="email" name="email" placeholder="Ваш e-mail">
 
-          <button class="button-subscription" type="submit">Подписаться</button>
+          <button class="subscription-button" type="submit">Подписаться</button>
         </form>
-      </article>
+      </section>
     </main>
 
     <footer class="page-footer">
-      <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="social-list">
-          <li class="social-item">
-            <a class="social-link" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">В контакте</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-link" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Ютюб</span>
-            </a>
-          </li>
-        </ul>
-      </section>
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">В контакте</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ютюб</span>
+          </a>
+        </li>
+      </ul>
 
-      <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <a class="contacts-link" href="tel:88128121212">+7 (812) 812-12-12</a>
-      </section>
+      <a class="contacts-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
-      <section class="logo-academy">
-        <h2 class="visually-hidden">Логотип сайта разработчика</h2>
-        <a class="academy-link" href="https://htmlacademy.ru/">
-          <img class="academy-logo" src="" alt="Логотип академии">
-        </a>
-      </section>
+      <a class="academy-link" href="https://htmlacademy.ru/">
+        <img class="academy-logo" src="" alt="Логотип академии">
+      </a>
     </footer>
 
   </body>

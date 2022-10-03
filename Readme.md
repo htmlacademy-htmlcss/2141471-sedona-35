@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Наиль Марков](https://up.htmlacademy.ru/htmlcss/35/user/2141471).
-* Наставник: `Андрей Ефимов`(https://htmlacademy.ru/profile/efiand).
+* Наставник: [Андрей Ефимов](https://htmlacademy.ru/profile/efiand).
 
 ---
 

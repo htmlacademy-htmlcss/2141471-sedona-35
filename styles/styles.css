@@ -15,6 +15,8 @@
 }
 
 body {
+  width: 100%;
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -28,10 +30,24 @@ body {
 
  /* Header */
 
-.page-header {
+.page-header,
+.main-index,
+.main-inner,
+.page-footer {
   width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
   color: #000000;
   background: #ffffff;
+}
+
+.page-navigation,
+.user-navigation {
+  margin: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .page-link {
@@ -76,6 +92,7 @@ body {
 /* Welcome */
 .welcome {
   background-color: #ffffff;
+  text-align: center;
 }
 
 .main-hero {
@@ -83,6 +100,7 @@ body {
   background-repeat: no-repeat;
   height: 485px;
   position: relative;
+  margin-bottom: 69px;
 }
 
 .main-hero::after {
@@ -99,6 +117,9 @@ body {
 }
 
 .welcome-subtitle {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 620px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -106,6 +127,8 @@ body {
 }
 
 .welcome-description {
+  margin: 0;
+  padding-bottom: 90px;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
@@ -113,18 +136,58 @@ body {
 
 /* Advantages */
 
+.advantages-list {
+  margin: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+
 .advantages-item {
   background-color: #ffffff;
+  height: 384px;
+  position: relative;
 }
+
+.advantages-item:nth-child(5) .advantages-subtitle {
+  margin: 0 113px 62px auto;
+  padding-top: 92px;
+}
+
 .advantages-subtitle {
+  width: 175px;
+  margin: 0 auto 62px 113px;
+  padding-top: 92px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  text-align: center;
 }
 
-.advantages-description {
+.advantages-description:not(:nth-child(5)) {
+  width: 230px;
+  margin: 0 auto 62px 85px;
+  text-align: center;
   color: #333333;
+}
+
+.advantages-item:nth-child(5) .advantages-description {
+  width: 230px;
+  margin: 0 85px 62px auto;
+  text-align: center;
+  color: #333333;
+}
+
+.advantages-image-sity {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.advantages-image-bridge {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .advantages-item:nth-child(1),
@@ -200,6 +263,16 @@ body {
   color: #ffffff;
 }
 
+.without-back {
+  background-image: none;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.without-back>.subscription-text {
+  color: #333333;
+}
+
 .subscription-title {
   font-weight: 700;
   font-size: 30px;
@@ -220,6 +293,7 @@ body {
   background-color: #82B3D3;
   color: #ffffff;
   border: 0;
+  padding: 0;
 }
 
 /* Footer*/
@@ -313,4 +387,80 @@ body {
   background-color: #ffffff;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+}
+
+.card-hotel {
+  width: 340px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  color: #333333;
+}
+
+.link-hotel {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.link-more {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #756157;
+}
+
+.button-favourites {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  border: 0;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+  padding: 0;
+}
+
+.card-hotel:nth-child(2) .button-favourites {
+  background-color: #7DB54F;
+}
+
+.rating-scores {
+  width: 140px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #F2F2F2;
+}
+
+/* Pagination */
+
+.pagination-link {
+  width: 60px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 20;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.pagination-active {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pgination-item:nth-child(5) .pagination-link {
+  background-color: #ffffff;
+  color: #000000;
 }

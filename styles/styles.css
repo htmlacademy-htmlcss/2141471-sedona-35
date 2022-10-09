@@ -81,39 +81,30 @@ body {
   text-align: center;
 }
 
-.main-hero {
-  background-image: url("../images/background/welcome-background.jpg");
-  background-repeat: no-repeat;
+.hero-main {
+  background-color: #F2F2F2;
+  background-image: url("../images/background/icon-decoration.svg"), url("../images/background/hero-back.jpg");
+  background-position: center bottom, center;
+  background-repeat: no-repeat, no-repeat;
   height: 485px;
-  position: relative;
-  margin-bottom: 69px;
 }
 
-.main-hero::after {
-  content: url("../images/background/welcome-decoration.svg");
-  position: absolute;
-  bottom: -4px;
-  left: 0;
+.hero-image {
+  padding-top: 51px;
 }
 
-.welcome-image {
-  position: absolute;
-  top: 51px;
-  left: 371px;
-}
-
-.welcome-subtitle {
-  margin: 0 auto;
-  margin-bottom: 25px;
-  width: 620px;
+.hero-subtitle {
+  padding-top: 69px;
+  padding-left: 290px;
+  padding-right: 290px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-.welcome-description {
-  margin: 0;
+.hero-description {
+  padding-top: 25px;
   padding-bottom: 90px;
   font-size: 22px;
   line-height: 26px;

@@ -153,13 +153,16 @@ body {
   color: #333333;
 }
 
-/* Hotel-search */
+/* Section hotel-search */
 
 .hotel-search {
-  background-color: #ffffff;
+  text-align: center;
+  padding: 96px 304px;
 }
 
-.hotel-search-interested {
+.hotel-search-subtitle {
+  margin: 0;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -167,18 +170,16 @@ body {
 }
 
 .hotel-search-discription {
+  margin: 0;
+  margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
 }
 
-.link-search-hotel {
-  font-size: 20px;
-  line-height: 36px;
+.hotel-search-link {
   text-decoration: none;
-  text-transform: uppercase;
-  background-color: #756157;
-  color: #ffffff;
+  padding: 8px 50px ;
 }
 
 /* Subscription*/

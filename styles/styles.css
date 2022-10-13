@@ -29,6 +29,7 @@ body {
 }
 
 .button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -38,6 +39,7 @@ body {
   text-transform: uppercase;
   border-radius: 4px;
   padding: 8px 20px;
+  box-sizing: border-box;
 }
 
 .label-info {
@@ -48,10 +50,6 @@ body {
   border-radius: 10px;
   background-color: #7DB54F;
   padding: 5px;
-}
-
-.page-link-active {
-  border-bottom: 2px solid #756257;
 }
 
 .visually-hidden {
@@ -74,6 +72,10 @@ body {
   color: inherit;
 }
 
+.page-link-active {
+  border-bottom: 2px solid #756257;
+}
+
 .user-link {
   text-align: center;
   text-decoration: none;
@@ -86,7 +88,7 @@ body {
 }
 
 .hero-main {
-  background-color: #000000;
+  background-color: #535252;
   background-image: url("../images/background/icon-decoration.svg"), url("../images/background/hero-back.jpg");
   background-position: center bottom, center;
   background-repeat: no-repeat, no-repeat;
@@ -98,9 +100,8 @@ body {
 }
 
 .hero-subtitle {
-  padding-top: 69px;
-  padding-left: 290px;
-  padding-right: 290px;
+  padding: 0 70px;
+  margin: 69px 0 25px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -108,8 +109,8 @@ body {
 }
 
 .hero-description {
-  padding-top: 25px;
-  padding-bottom: 90px;
+  padding: 0 70px;
+  margin: 0 0 90px;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
@@ -121,23 +122,28 @@ body {
   text-align: center;
 }
 
-.advantages-item {
-  padding: 103px 85px 30px;
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-.image {
+.advantages-item-image {
   background-color: #82B3D3;
   color: #ffffff;
-  text-align: center;
-  padding: 92px 85px 111px;
 }
 
-.image .advantages-description {
+.advantages-item-image .advantages-description {
   color: #ffffff;
+}
+
+.advantages-item {
+  width: 400px;
+  padding: 85px;
 }
 
 .advantages-subtitle {
-  margin: 0;
+  margin-top: 8px;
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 24px;
@@ -172,7 +178,7 @@ body {
 
 .hotel-search {
   text-align: center;
-  padding: 96px 304px;
+  padding: 96px;
 }
 
 .hotel-search-subtitle {
@@ -194,27 +200,26 @@ body {
 
 .hotel-search-link {
   text-decoration: none;
-  padding: 8px 50px ;
+  padding: 8px 50px;
 }
 
 /* Section subscription*/
 
 .subscription {
-  padding: 96px 258px 104px;
+  padding: 96px;
   text-align: center;
   background-color: #ffffff;
 }
 
-.subscription-back {
-  background-color: #000000;
+.subscription-with-back {
+  background-color: #535252;
   background-image: url("../images/background/subscribe-back.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
 }
 
 .subscription-title {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -222,8 +227,7 @@ body {
 }
 
 .subscription-text {
-  margin: 0;
-  margin-bottom: 54px;
+  margin: 0 0 54px;
   font-size: 22px;
   line-height: 26px;
 }
@@ -231,7 +235,7 @@ body {
 .subscription-field {
   padding: 12px 20px;
   background-color: #F2F2F2;
-  border: 0;
+  border: none;
   border-radius: 4px 0 0 4px;
 }
 
@@ -239,8 +243,8 @@ body {
   font-size: 20px;
   line-height: 36px;
   background-color: #82B3D3;
-  border: 0;
-  padding: 8px 50px;
+  border: none;
+  min-width: 232px;
   border-radius: 0 4px 4px 0;
 }
 
@@ -275,8 +279,7 @@ body {
 }
 
 .breadcrumbs {
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0 0 40px;
 }
 
 .breadcrumbs-link {
@@ -287,7 +290,7 @@ body {
 
 /* Сontent-filter */
 
-.title-group {
+.title-filter {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -299,13 +302,20 @@ body {
 }
 
 .button-submit {
-  border: 0;
+  border: none;
   background-color: #82B3D3;
 }
 
 .button-reset {
-  border: 0;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border: none;
   background-color: inherit;
+  color: #ffffff;
 }
 
 /* select-hotel */
@@ -350,12 +360,12 @@ body {
 }
 
 .button-secondary {
-  border: 0;
+  border: none;
   background-color: #82B3D3;
 }
 
 .button-accent {
-  border: 0;
+  border: none;
   background-color: #7DB54F;
 }
 
@@ -379,7 +389,7 @@ body {
   color: #000000;
 }
 
-.more {
+.pagination-more {
   background-color: #ffffff;
   color: #000000;
 }

@@ -65,6 +65,7 @@ body {
 
 .navigation {
   display: flex;
+  align-items: center;
   width: 1060px;
   margin: 0 auto;
 }
@@ -125,7 +126,7 @@ body {
 }
 
 .hero-main {
-  background-color: #535252;
+  background-color: #777777;
   background-image: url("../images/background/icon-decoration.svg"), url("../images/background/hero-back.jpg");
   background-position: center bottom, center;
   background-repeat: no-repeat, no-repeat;
@@ -183,7 +184,8 @@ body {
 }
 
 .advantages-subtitle {
-  margin-top: 90px;
+  padding:  85px 85px 0;
+  margin-top: 0;
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 24px;
@@ -193,7 +195,7 @@ body {
 
 .advantages-description {
   margin: 0;
-  padding-top: 30px;
+  padding: 30px 85px;
   color: #333333;
 }
 
@@ -216,7 +218,8 @@ body {
 }
 
 .service-subtitle {
-  margin-top: 90px;
+  padding:  85px 85px 0;
+  margin-top: 0;
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 24px;
@@ -225,6 +228,8 @@ body {
 }
 
 .service-description {
+  margin: 0;
+  padding: 30px 85px;
   color: #333333;
 }
 

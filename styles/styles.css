@@ -524,9 +524,6 @@ body {
 
 .link-hotel {
   grid-column: 1/-1;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
   color: #000000;
   text-decoration: none;
 }
@@ -538,6 +535,9 @@ body {
 
 .name-hotel {
   margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
 }
 
 .placement-hotel {
@@ -559,12 +559,13 @@ body {
 
 .button-secondary {
   grid-column: 2/3;
+  padding: 8px;
   background-color: #82B3D3;
 }
 
 .button-accent {
   grid-column: 2/3;
-  padding: 8px 18px;
+  padding: 8px;
   background-color: #7DB54F;
 }
 

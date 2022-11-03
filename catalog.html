@@ -45,7 +45,7 @@
 
       <main class="main-inner">
 
-        <div class="container-filter">
+        <div class="filter-container">
           <header class="main-inner-header">
             <h1 class="catalog-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -142,7 +142,7 @@
         </div>
 
         <section class="select-hotel">
-          <div class="container-select">
+          <div class="select-container">
             <h2 class="visually-hidden">Вобор гостиницы</h2>
             <p class="found-hotel">
               Найдено гостиниц: 38
@@ -183,13 +183,9 @@
               <p class="card-price">от 4000 &#8381</p>
               <a class="card-link button" href="#">Подробнее</a>
               <button class="card-button-secondary button" type="button">В избранное</button>
-              <ul class="card-rating-list">
+              <p class="star-rating star-rating-4">
                 <span class="visually-hidden">Количество звезд отеля 4</span>
-                <li class="rating-item"></li>
-                <li class="rating-item"></li>
-                <li class="rating-item"></li>
-                <li class="rating-item"></li>
-              </ul>
+              </p>
               <p class="card-rating-scores">
                   Рейтинг: 8,5
               </p>
@@ -203,13 +199,9 @@
               <p class="card-price">от 5000 &#8381</p>
               <a class="card-link button" href="#">Подробнее</a>
               <button class="card-button-accent button" type="button">В избранном</button>
-              <ul class="card-rating-list">
+              <p class="star-rating star-rating-4">
                 <span class="visually-hidden">Количество звезд отеля 4</span>
-                <li class="rating-item"></li>
-                <li class="rating-item"></li>
-                <li class="rating-item"></li>
-                <li class="rating-item"></li>
-              </ul>
+              </p>
               <p class="card-rating-scores">
                   Рейтинг: 9,2
               </p>
@@ -223,12 +215,9 @@
               <p class="card-price">от 2500 &#8381</p>
               <a class="card-link button" href="#">Подробнее</a>
               <button class="card-button-secondary button" type="button">В избранное</button>
-              <ul class="card-rating-list">
+              <p class="star-rating star-rating-3">
                 <span class="visually-hidden">Количество звезд отеля 3</span>
-                <li class="rating-item"></li>
-                <li class="rating-item"></li>
-                <li class="rating-item"></li>
-              </ul>
+              </p>
               <p class="card-rating-scores">
                   Рейтинг: 6,9
               </p>
@@ -242,11 +231,9 @@
               <p class="card-price">от 1500 &#8381</p>
               <a class="card-link button" href="#">Подробнее</a>
               <button class="card-button-secondary button" type="button">В избранное</button>
-              <ul class="card-rating-list">
+              <p class="star-rating star-rating-2">
                 <span class="visually-hidden">Количество звезд отеля 2</span>
-                <li class="rating-item"></li>
-                <li class="rating-item"></li>
-              </ul>
+              </p>
               <p class="card-rating-scores">
                   Рейтинг: 5,0
               </p>
@@ -326,6 +313,37 @@
             </svg>
           </a>
       </footer>
+      <div class="modal-container">
+        <div class="modal-window">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <button class="modal-close"></button>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="date-select">
+              <label class="modal-label">Дата заезда:
+                <input class="modal-field date-field" type="text" value="27 апреля 2020">
+              </label>
+              <span class="modal-message fail-message">Мы не можем отправить вас в прошлое.</span>
+            </p>
+            <p class="date-select">
+              <label class="modal-label">Дата выезда:
+                <input class="modal-field date-field" type="text" value="1 сентября 2021">
+              </label>
+              <span class="modal-message default-message">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <p class="people-select">
+              <label class="modal-label">Взрослые:
+                <input class="people-field" type="text" value="2">
+              </label>
+            </p>
+            <p class="people-select">
+              <label class="modal-label">Дети:
+                <input class="people-field" type="text" value="2">
+              </label>
+            </p>
+            <button class="modal-button button" type="submit">Найти</button>
+          </form>
+        </div>
+      </div>
     </div>
 
   </body>

@@ -318,26 +318,63 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <button class="modal-close"></button>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="date-select">
+            <p class="modal-select date-select">
               <label class="modal-label">Дата заезда:
                 <input class="modal-field date-field" type="text" value="27 апреля 2020">
               </label>
               <span class="modal-message fail-message">Мы не можем отправить вас в прошлое.</span>
             </p>
-            <p class="date-select">
+            <p class="modal-select date-select">
               <label class="modal-label">Дата выезда:
                 <input class="modal-field date-field" type="text" value="1 сентября 2021">
               </label>
               <span class="modal-message default-message">На эти даты есть свободные номера. Пока есть.</span>
             </p>
-            <p class="people-select">
+            <p class="modal-select people-select">
               <label class="modal-label">Взрослые:
-                <input class="people-field" type="text" value="2">
+                <button class="button-field button-min" type="button">
+                  <span class="visually-hidden">Уменьшить</span>
+                  <svg class="button-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="#756157" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9v2h14V9H3Z"/>
+                  </svg>
+                </button>
+                <input class="modal-field people-field" type="text" value="2">
+                <button class="button-field button-max" type="button">
+                  <span class="visually-hidden">Увеличить</span>
+                  <svg class="button-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="#756157" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
+                  </svg>
+                </button>
               </label>
             </p>
-            <p class="people-select">
-              <label class="modal-label">Дети:
-                <input class="people-field" type="text" value="2">
+            <p class="modal-select people-select">
+              <label class="modal-label">
+                <span class="label">Дети:
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+                      <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 26 26" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                        <path fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd"/>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text">
+                      Укажите количество детей,<br> которые будут с вами, возраст которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.
+                    </span>
+                  </span>
+                </span>
+                <button class="button-field button-min" type="button">
+                  <span class="visually-hidden">Уменьшить</span>
+                  <svg class="button-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="#756157" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9v2h14V9H3Z"/>
+                  </svg>
+                </button>
+                <input class="modal-field people-field" type="text" value="2">
+                <button class="button-field button-max" type="button">
+                  <span class="visually-hidden">Увеличить</span>
+                  <svg class="button-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="#756157" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
+                  </svg>
+                </button>
               </label>
             </p>
             <button class="modal-button button" type="submit">Найти</button>

@@ -1272,4 +1272,232 @@ body {
   cursor: pointer;
 }
 
+.modal-close:hover {
+  background-color: #E6E6E6;
+}
 
+.modal-close:focus-visible {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close:active {
+  opacity: 0.3;
+  background-color: #E6E6E6;
+  outline: none;
+}
+
+.modal-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 88px;
+}
+
+.modal-select {
+  margin: 0;
+}
+
+.date-select {
+  grid-column: 1 / -1;
+}
+
+.modal-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.modal-field {
+  width: 100%;
+  padding: 12px 20px;
+  font: inherit;
+  line-height: 24px;
+  font-weight: 700;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.modal-field:hover {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #E6E6E6;
+}
+
+.modal-field:focus-visible {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-field:active {
+  color: inherit;
+  outline: 2px solid #000000;
+}
+
+.date-field {
+  width: 440px;
+  background-image: url("../images/icon/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.modal-message {
+  display: block;
+  margin: 0 0 23px 137px;
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+.fail-message {
+  color: #FF5757;
+}
+
+.default-message {
+  color: #333333;
+}
+
+.button-field {
+  position: absolute;
+  padding: 14px 10px;
+  color: rgba(117, 97, 87, 0.3);
+  background-color: inherit;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.button-min {
+  right: 70px;
+}
+
+.button-min:hover {
+  color: inherit;
+}
+
+.button-min:focus-visible {
+  color: inherit;
+  outline: none;
+}
+
+.button-min:focus-visible .button-icon {
+  color: inherit;
+  border-radius: 4px;
+  outline: 3px solid #82B3D3;
+}
+
+.button-min:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.button-max {
+  right: 0;
+}
+
+.button-max:hover {
+  color: inherit;
+}
+
+.button-max:focus-visible {
+  color: inherit;
+  outline: none;
+}
+
+.button-max:focus-visible .button-icon {
+  color: inherit;
+  border-radius: 4px;
+  outline: 3px solid #82B3D3;
+}
+
+.button-max:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.button-icon {
+  display: block;
+  fill: currentColor;
+}
+
+.people-field {
+  position: relative;
+  width: 110px;
+  text-align: center;
+}
+
+.modal-button {
+  margin-top: 48px;
+  grid-column: 1 / -1;
+  padding: 18px 0;
+  background-color: #83B3D3;
+  border-radius: 10px;
+}
+
+.modal-button:hover {
+  background-color: #68A2CA;
+}
+
+.modal-button:focus-visible {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.modal-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #68A2CA;
+  outline: none;
+}
+
+/* tooltip */
+
+.tooltip {
+  position: absolute;
+  margin-left: 10px;
+}
+
+.tooltip-toggle {
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.tooltip-icon {
+  display: block;
+}
+
+.tooltip-text {
+  position: absolute;
+  left: -115px;
+  display: block;
+  width: 256px;
+  margin-top: 15px;
+  padding: 15px 18px 18px 22px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.tooltip-text::before {
+  position: absolute;
+  width: 19px;
+  height: 9px;
+  top: -9px;
+  left: 46%;
+  background-image: url("../images/icon/triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}

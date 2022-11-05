@@ -26,6 +26,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .button {
@@ -300,15 +301,15 @@ body {
 }
 
 .service-home::before {
-  background-image: url("/images/icon/house.svg");
+  background-image: url("../images/icon/house.svg");
 }
 
 .service-food::before {
-  background-image: url("/images/icon/food.svg");
+  background-image: url("../images/icon/food.svg");
 }
 
 .service-souvenirs::before {
-  background-image: url("/images/icon/souvenirs.svg");
+  background-image: url("../images/icon/souvenirs.svg");
 }
 
 /* Section hotel-search */
@@ -547,7 +548,7 @@ body {
 
 .breadcrumbs-item::after {
   position: absolute;
-  background-image: url("/images/icon/icon-arrow.svg");
+  background-image: url("../images/icon/icon-arrow.svg");
   background-repeat: no-repeat;
   background-position: right;
   width: 8px;
@@ -585,7 +586,7 @@ body {
   height: 15px;
   margin: auto 0;
   padding-right: 13px;
-  background-image: url("/images/icon/icon-home.svg");
+  background-image: url("../images/icon/icon-home.svg");
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -598,7 +599,7 @@ body {
   gap: 70px;
 }
 
-.group-filter {
+.filter-group {
   margin: 0;
   padding: 0;
   border: none;

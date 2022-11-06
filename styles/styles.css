@@ -431,6 +431,7 @@ body {
 
 .social-link {
   display: flex;
+  align-items: flex-end;
   width: 48px;
   height: 40px;
   box-sizing: border-box;
@@ -476,26 +477,26 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.academy-link {
+.link-academy {
   padding: 8px 10px;
   color: #000000;
 }
 
-.academy-logo {
+.logo-academy {
   display: block;
   fill: currentColor;
 }
 
-.academy-link:hover {
+.link-academy:hover {
   color: #756157;
 }
 
-.academy-link:focus-visible {
+.link-academy:focus-visible {
   color: #756157;
   outline: none;
 }
 
-.academy-link:active {
+.link-academy:active {
   color: rgba(117, 97, 87, 0.3);
 }
 
@@ -621,25 +622,77 @@ body {
   margin-bottom: 0;
 }
 
-.control {
-  position: relative;
-  display: block;
-  padding-left: 36px;
+.checker {
+  display: flex;
   line-height: 23px;
+  cursor: pointer;
 }
 
-.control:hover {
+.checker:hover {
   opacity: 0.6;
 }
 
-.control-mark {
-  position: absolute;
-  left: 0;
+.checker + .checker {
+  margin-top: 16px;
+}
+
+.checker-input {
+  position: relative;
+  flex-shrink: 0;
   width: 20px;
   height: 20px;
-  background-color: #ffffff;
+  margin: 1px 20px 0 0;
+  color: inherit;
+  border-radius: 4px;
+  appearance: none;
+}
+
+.checker-input:focus-visible {
+  outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
+
+.checker:active,
+.checker-input:active::before {
+  opacity: 0.3;
+}
+
+.checker-input::before,
+.checker-input::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: inherit;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.checker-input::before {
+	background-color: currentColor;
+}
+
+.checker-input::after {
+  background-color: #3f5e72;
+  -webkit-mask-image: url("../images/icon/tick.svg");
+  -webkit-mask-position: center;
+  opacity: 0;
+}
+
+.checker-input:checked::after {
+	opacity: 1;
+}
+
+.checker-input[type="radio"] {
+	border-radius: 50%;
+}
+
+.checker-input[type="radio"]::after {
+  -webkit-mask-image: url("../images/icon/tick-circle.svg");
+}
+/*
+
 
 .control-input[type="checkbox"]:focus + .control-mark {
   outline: 3px solid #83B3D3;
@@ -687,7 +740,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   content: "";
-}
+}*/
 
 .price-filter {
   display: flex;
@@ -1093,24 +1146,6 @@ body {
 .card-rating-stars {
   margin: 0;
 }
-
-/*.card-rating-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -6px 0 0 -6px;
-  padding: 0;
-  list-style-type: none;
-}
-
-.rating-item {
-  width: 18px;
-  height: 18px;
-  margin: 6px 0 0 6px;
-  padding: 10px 0;
-  background-image: url("/images/icon/star.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}*/
 
 .star-rating {
   width: 22px;

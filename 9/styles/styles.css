@@ -26,6 +26,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .button {
@@ -300,15 +301,15 @@ body {
 }
 
 .service-home::before {
-  background-image: url("/images/icon/house.svg");
+  background-image: url("../images/icon/house.svg");
 }
 
 .service-food::before {
-  background-image: url("/images/icon/food.svg");
+  background-image: url("../images/icon/food.svg");
 }
 
 .service-souvenirs::before {
-  background-image: url("/images/icon/souvenirs.svg");
+  background-image: url("../images/icon/souvenirs.svg");
 }
 
 /* Section hotel-search */
@@ -430,6 +431,7 @@ body {
 
 .social-link {
   display: flex;
+  align-items: flex-end;
   width: 48px;
   height: 40px;
   box-sizing: border-box;
@@ -475,26 +477,26 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.academy-link {
+.link-academy {
   padding: 8px 10px;
   color: #000000;
 }
 
-.academy-logo {
+.logo-academy {
   display: block;
   fill: currentColor;
 }
 
-.academy-link:hover {
+.link-academy:hover {
   color: #756157;
 }
 
-.academy-link:focus-visible {
+.link-academy:focus-visible {
   color: #756157;
   outline: none;
 }
 
-.academy-link:active {
+.link-academy:active {
   color: rgba(117, 97, 87, 0.3);
 }
 
@@ -547,7 +549,7 @@ body {
 
 .breadcrumbs-item::after {
   position: absolute;
-  background-image: url("/images/icon/icon-arrow.svg");
+  background-image: url("../images/icon/icon-arrow.svg");
   background-repeat: no-repeat;
   background-position: right;
   width: 8px;
@@ -585,7 +587,7 @@ body {
   height: 15px;
   margin: auto 0;
   padding-right: 13px;
-  background-image: url("/images/icon/icon-home.svg");
+  background-image: url("../images/icon/icon-home.svg");
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -598,7 +600,7 @@ body {
   gap: 70px;
 }
 
-.group-filter {
+.filter-group {
   margin: 0;
   padding: 0;
   border: none;
@@ -620,72 +622,76 @@ body {
   margin-bottom: 0;
 }
 
-.control {
-  position: relative;
-  display: block;
-  padding-left: 36px;
+.checker {
+  display: flex;
   line-height: 23px;
+  cursor: pointer;
 }
 
-.control:hover {
+.checker:hover {
   opacity: 0.6;
 }
 
-.control-mark {
-  position: absolute;
-  left: 0;
+.checker + .checker {
+  margin-top: 16px;
+}
+
+.checker-input {
+  position: relative;
+  flex-shrink: 0;
   width: 20px;
   height: 20px;
-  background-color: #ffffff;
+  margin: 1px 20px 0 0;
+  color: inherit;
   border-radius: 4px;
+  appearance: none;
 }
 
-.control-input[type="checkbox"]:focus + .control-mark {
+.checker-input:focus-visible {
   outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
-.control-input[type="radio"]:focus + .control-mark {
-  outline: 3px solid #83B3D3;
-  border-radius: 50%;
-}
-
-.control-input[type="checkbox"]:active + .control-mark {
-  outline: none;
+.checker:active,
+.checker-input:active::before {
   opacity: 0.3;
 }
 
-.control-input[type="radio"]:active + .control-mark {
-  outline: none;
-  opacity: 0.3;
+.checker-input::before,
+.checker-input::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: inherit;
+	transition: opacity 0.2s ease-in-out;
 }
 
-.control-circle {
-  border-radius: 50%;
+.checker-input::before {
+	background-color: currentColor;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before {
-  position: absolute;
-  top: 6px;
-  left: 4px;
-  width: 13px;
-  height: 10px;
-  background-image: url(../images/icon/mark.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  content: "";
+.checker-input::after {
+  background-color: #3f5e72;
+  -webkit-mask-image: url("../images/icon/tick.svg");
+  -webkit-mask-position: center;
+  mask-image: url("/images/icon/tick.svg");
+  mask-position: center;
+  opacity: 0;
 }
 
-.control-input[type="radio"]:checked + .control-mark::before {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 10px;
-  height: 10px;
-  background-image: url(../images/icon/circle.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  content: "";
+.checker-input:checked::after {
+	opacity: 1;
+}
+
+.checker-input[type="radio"] {
+	border-radius: 50%;
+}
+
+.checker-input[type="radio"]::after {
+  -webkit-mask-image: url("../images/icon/tick-circle.svg");
 }
 
 .price-filter {
@@ -1092,24 +1098,6 @@ body {
 .card-rating-stars {
   margin: 0;
 }
-
-/*.card-rating-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -6px 0 0 -6px;
-  padding: 0;
-  list-style-type: none;
-}
-
-.rating-item {
-  width: 18px;
-  height: 18px;
-  margin: 6px 0 0 6px;
-  padding: 10px 0;
-  background-image: url("/images/icon/star.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}*/
 
 .star-rating {
   width: 22px;

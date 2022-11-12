@@ -230,7 +230,7 @@ body {
 }
 
 .block-item-group .block-item {
-  padding: 92px 85px;
+  padding: 92px 80px;
 }
 
 .block-item {
@@ -239,7 +239,7 @@ body {
   flex-direction: column;
   width: 400px;
   min-height: 384px;
-  padding: 104px 85px;
+  padding: 104px 80px;
   box-sizing: border-box;
 }
 
@@ -259,8 +259,8 @@ body {
 .decoration-subtitle::after {
   position: absolute;
   height: 2px;
-  right: 85px;
-  left: 85px;
+  right: 90px;
+  left: 90px;
   bottom: -31px;
   background-color: rgba(0, 0, 0, 0.3);
   content: "";
@@ -368,6 +368,7 @@ body {
   margin: 0 0 54px;
   font-size: 22px;
   line-height: 26px;
+  color: #333333;
 }
 
 .subscription-form {

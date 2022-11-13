@@ -209,19 +209,19 @@
           <form class="block-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="block-select date-select">
               <label class="block-name">Дата заезда:
-                <input class="block-field date-field" type="text" value="27 апреля 2020">
+                <input class="block-field date-field" type="text" name="arrival" value="27 апреля 2020" required>
               </label>
               <span class="block-message fail-message">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="block-select date-select">
               <label class="block-name">Дата выезда:
-                <input class="block-field date-field" type="text" value="1 сентября 2021">
+                <input class="block-field date-field" type="text" name="departure" value="1 сентября 2021" required>
               </label>
               <span class="block-message default-message">На эти даты есть свободные номера. Пока есть.</span>
             </p>
             <p class="block-select people-select">
               <label class="block-name">Взрослые:
-                <input class="block-field people-field" type="text" value="2">
+                <input class="block-field people-field" type="number" name="adults" min="1" value="2">
               </label>
               <button class="button-field button-min" type="button">
                 <span class="visually-hidden">Уменьшить.</span>
@@ -238,7 +238,7 @@
             </p>
             <p class="block-select people-select">
               <label class="block-name">Дети:
-                <input class="block-field people-field" type="text" value="2">
+                <input class="block-field people-field" type="number" name="children" min="1" value="2">
               </label>
               <span class="tooltip">
                 <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
